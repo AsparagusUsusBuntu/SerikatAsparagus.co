@@ -1,0 +1,182 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* awal header */
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #003a24;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 80px; 
+    width: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    background-color: transparent;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #003a24;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #005f3a;
+}
+/* akhir header */
+
+/* awal konten */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.hero {
+    background: #003a24;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info {
+    flex: 1;
+    background-color: #003a24;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* akhir konten */
+
+/* styling untuk section Tentang */
+#Tentang .tentang {
+    background-color: #003a24;  /* nuansa kertas kuno/ parchment */
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+#Tentang .tentang h2 {
+    margin-bottom: 15px;
+}
+#Tentang .tentang p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+#Tentang .tentang a {
+    font-weight: bold;
+    
+}
+#Tentang .tentang a:hover {
+    text-decoration: underline;
+}
+/* tentang */
+
+/* awal footer */
+footer {
+    background-color: #003a24;
+    color: #d7d7d7;
+    text-align: center;
+    padding: 10px;
+}
+/* akhir footer */
+
+/* pengaturan */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        display: inline-block;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+/* pengaturan */
