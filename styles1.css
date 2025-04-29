@@ -131,6 +131,11 @@ nav ul li a:hover {
 }
 /* tentang */
 
+/* alert */
+.bergerak {
+    background: yellow;
+}
+
 /* awal footer */
 footer {
     background-color: #003a24;
