@@ -99,7 +99,8 @@ nav ul li a:hover {
 }
 
 .image-container img {
-    max-width: 50%;
+    max-width: 250px;
+    max-height: 250px;
     height: auto;
     border-radius: 10px;
 }
@@ -154,11 +155,25 @@ button {
     line-height: 1.6;
 }
 #Tentang .tentang a {
-    font-weight: bold;
+    padding: 17px 10px;
+    border-radius: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
     
 }
 #Tentang .tentang a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 /* tentang */
 
@@ -204,8 +219,9 @@ footer {
     }
     
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row !important; /* override arah kolom */
+        flex-wrap: wrap; /* biarkan wrap jika tidak cukup space */
+        justify-content: center;
     }
 }
 
